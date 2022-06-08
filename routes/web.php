@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    $id = 4;
     $name = 'Davide Mucci';
     $job = 'Junior Full Stack Web Developer';
     return view('home', compact('name', 'job'));
@@ -24,11 +25,15 @@ Route::get('/about-me', function () {
 })-> name ('about-me');
 
 Route::get('/portfolio', function () {
-    return view('portfolio');
+    $id = 4;
+    $name = 'Davide Mucci';
+    $job = 'Junior Full Stack Web Developer';
+    return view('portfolio', compact('name', 'job'));
 })-> name ('portfolio');
 
 Route::get('/contacts', function () {
     return view('contacts');
 })-> name ('contacts');
+
 
 

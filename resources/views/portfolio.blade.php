@@ -1,3 +1,5 @@
+<?php echo route('portfolio', ['']); ?>
+
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
@@ -47,7 +49,8 @@
         }
 
         .title {
-            font-size: 84px;
+            font-size: 3rem;
+            margin-bottom: 5rem;
         }
 
         .links>a {
@@ -60,17 +63,26 @@
             text-transform: uppercase;
         }
 
-        .m-b-md {
-            margin-bottom: 30px;
-        }
+
     </style>
 </head>
 
 <body>
     <div class="flex-center position-ref full-height">
         <div class="content">
-            <h2>Portfolio</h2>
-            <div>
+            <div class=" title">
+            <h2 style="margin-bottom: 0;">Portfolio</h2>
+                
+            </div>
+            <div class="user_info">
+            <h3>{{ $name }}</h3>
+            <p>
+                {{ $job }}
+            </p>
+
+            </div>
+
+            <div style="margin-bottom: 4rem;">
                 <div class="img-box">
                     <img src='https://picsum.photos/300/200' alt='default img'>
                     <img src='https://picsum.photos/300/200' alt='default img'>

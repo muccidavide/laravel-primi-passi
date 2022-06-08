@@ -67,7 +67,7 @@
         <header style="background-color: #efefef; padding: 1rem 0;">
             <ul class="links">
                 
-                <a href="{{route('portfolio')}}"> Portfolio </a>
+                <a href="{{route('portfolio')}}"> Portfolio </a>  
                 <a href="{{route('about-me')}}"> About Me </a>
                 <a href="{{route('contacts')}}"> Contacts </a>
                 
