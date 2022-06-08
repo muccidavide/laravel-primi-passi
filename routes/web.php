@@ -18,3 +18,17 @@ Route::get('/', function () {
     $job = 'Junior Full Stack Web Developer';
     return view('home', compact('name', 'job'));
 });
+
+Route::get('/about-me', function () {
+    return view('about-me');
+})-> name ('about-me');
+
+Route::get('/portfolio', function () {
+    return view('portfolio');
+})-> name ('portfolio');
+
+Route::get('/contacts', function () {
+    return view('contacts');
+})-> name ('contacts');
+
+

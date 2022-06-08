@@ -64,21 +64,16 @@
         </style>
     </head>
     <body>
+        <header style="background-color: #efefef; padding: 1rem 0;">
+            <ul class="links">
+                
+                <a href="{{route('portfolio')}}"> Portfolio </a>
+                <a href="{{route('about-me')}}"> About Me </a>
+                <a href="{{route('contacts')}}"> Contacts </a>
+                
+            </ul>
+        </header>
         <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
-
             <div class="content">
                 <div class="title m-b-md">
                     {{ $name }}
@@ -86,6 +81,7 @@
                 <p>
                 {{ $job }}
                 </p>
+
             </div>
         </div>
     </body>
